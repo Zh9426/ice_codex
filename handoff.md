@@ -1,3 +1,8 @@
+# 2026-11-27：四版 ICE 驱动逐行对照
+
+- 报告 `docs/verasonics/ice_four_driver_code_comparison_2026-11-27.md` 锁定了原版、35 V 保留成像、35 V 纯 TX、`Zh9426/ICE_AG` 的 Profile 1 高功率脚本。ICE_AG 比较基准为 `88dc3fa2`，20 周期、600 μs、500 发、1.6 V 初始请求、35 V 软件上限。两套纯 TX 的接收和重建事件为零，ICE_AG 保留未调度的接收占位。
+- 独立 MATLAB R2024b 构建及 ICE_AG MAT 回读通过。三个 20 mm 版的默认 TX 对象相同，最大延时 0.269361 μs。未改驱动，未运行 VSX、硬件或声热求解。配置、探头额定和实测声输出仍 unknown。F 盘本机不可访问，使用 `tmp/pdfs/` 的指定版手册提取文本，厂商包和文本可能需在另一台电脑重新准备。
+
 # 2026-11-23：独立仿真精简留存
 
 - 后续仿真按 `independent_simulation/AGENTS.md` 归档关键图表、可重绘数值、核验结果及小型复算输入。整批分析与回读核验后清理临时全场。新增 CUDA 原始 HDF5 默认受 Git 忽略规则保护。
